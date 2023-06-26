@@ -1,49 +1,97 @@
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* Reset some default styles in browsers */
+body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
 }
+
+/* Apply a background color to the body */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
 header {
-    background: #333;
-    color: #fff;
+    background: #35424a;
+    color: #ffffff;
+    padding: 1rem 0;
     text-align: center;
-    padding: 1em 0;
 }
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 120px;
+    margin-right: 20px;
+}
+
+/* Navigation styles */
 nav ul {
-    padding: 0;
+    background: #35424a;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+nav ul li {
     list-style: none;
-    background: #f4f4f4;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
     text-align: center;
 }
-nav ul li {
+
+.navbar li {
     display: inline;
     margin-right: 20px;
 }
-nav ul li a {
-    font-weight: bold;
-    color: #555;
+
+.navbar li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
     text-decoration: none;
 }
-nav ul li a:hover {
-    color: #333;
-    background-color: #f4f4f4;
+
+.navbar li a:hover {
+    background-color: #111;
 }
 
+/* Main content styles */
 #main {
+    padding: 2rem;
     text-align: center;
-    padding: 4em 0;
 }
-#projects, #experience, #contact {
-    padding: 3em 0;
+
+/* Sections styles */
+#skills, #projects, #experience, #contact {
+    padding: 2rem;
+    text-align: center;
 }
+
+/* Footer styles */
 footer {
     text-align: center;
-    padding: 1em 0;
-    background: #333;
-    color: #fff;
+    padding: 1rem 0;
+    background: #35424a;
+    color: #ffffff;
 }

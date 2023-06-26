@@ -4,7 +4,6 @@ body, h1, h2, h3, p {
     padding: 0;
 }
 
-/* Apply a background color to the body */
 /* Apply a background color and image to the body with an overlay */
 body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('assets/images/technology-1283624_1920.jpg');
@@ -15,7 +14,6 @@ body {
     line-height: 1.6;
     color: #ffffff;
 }
-
 
 /* Header styles */
 header {
@@ -38,24 +36,6 @@ header {
 }
 
 /* Navigation styles */
-nav ul {
-    background: #35424a;
-    display: flex;
-    justify-content: center;
-    padding: 1rem 0;
-}
-
-nav ul li {
-    list-style: none;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 .navbar {
     list-style-type: none;
     margin: 0;
@@ -76,10 +56,13 @@ nav ul li a {
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .navbar li a:hover {
-    background-color: #111;
+    background-color: #2980b9;
 }
 
 /* Main content styles */
@@ -94,6 +77,12 @@ nav ul li a {
     text-align: center;
 }
 
+/* Remove bullet points from the list in Skills section */
+#skills ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
 /* Footer styles */
 footer {
     text-align: center;
@@ -101,8 +90,17 @@ footer {
     background: #35424a;
     color: #ffffff;
 }
-/* Remove bullet points from the list in Skills section */
-#skills ul {
-    list-style-type: none;
-    padding-left: 0;
+
+/* General link styles */
+a {
+    color: #3498db;
+    text-decoration: none;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    background-color: #3498db;
+    color: #ffffff;
+    border-radius: 3px;
 }
